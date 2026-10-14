@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Course Registration Form</title>
+</head>
+<body>
+
+<form action="#" method="post" enctype="multipart/form-data">
+
+  <!-- Login Information -->
+  <fieldset>
+    <legend>Login Information</legend>
+    <table>
+      <tr>
+        <td><label for="username">Username:</label></td>
+        <td><input type="text" id="username" name="username"></td>
+        <td><label for="password">Password:</label></td>
+        <td><input type="password" id="password" name="password"></td>
+      </tr>
+      <tr>
+        <td><label for="email">Email:</label></td>
+        <td><input type="email" id="email" name="email"></td>
+        <td><label for="accountType">Account Type:</label></td>
+        <td>
+          <select id="accountType" name="accountType">
+            <option value="student">Student</option>
+            <option value="teacher">Teacher</option>
+            <option value="professional">Professional</option>
+          </select>
+        </td>
+      </tr>
+    </table>
+  </fieldset>
+  <br>
+
+  <!-- Personal Information -->
+  <fieldset>
+    <legend>Personal Information</legend>
+    <table>
+      <tr>
+        <td><label for="fullname">Full Name:</label></td>
+        <td><input type="text" id="fullname" name="fullname"></td>
+        <td>Gender:</td>
+        <td>
+          <input type="radio" id="male" name="gender" value="male">
+          <label for="male">Male</label>
+          <input type="radio" id="female" name="gender" value="female">
+          <label for="female">Female</label>
+        </td>
+      </tr>
+      <tr>
+        <td><label for="dob">Date of Birth:</label></td>
+        <td><input type="date" id="dob" name="dob"></td>
+        <td><label for="phone">Phone:</label></td>
+        <td><input type="tel" id="phone" name="phone"></td>
+      </tr>
+      <tr>
+        <td><label for="country">Country:</label></td>
+        <td>
+          <select id="country" name="country">
+            <option value="bangladesh">Bangladesh</option>
+            <option value="india">India</option>
+            <option value="pakistan">Pakistan</option>
+            <option value="nepal">Nepal</option>
+            <option value="other">Other</option>
+          </select>
+        </td>
+        <td><label for="city">City:</label></td>
+        <td><input type="text" id="city" name="city"></td>
+      </tr>
+    </table>
+  </fieldset>
+  <br>
+
+  <!-- Course Information -->
+  <fieldset>
+    <legend>Course Information</legend>
+    <table>
+      <tr>
+        <td><label for="course">Select Course:</label></td>
+        <td>
+          <select id="course" name="course">
+            <option value="web">Web Development</option>
+            <option value="python">Python Programming</option>
+            <option value="java">Java Programming</option>
+            <option value="database">Database Management</option>
+            <option value="ml">Machine Learning</option>
+          </select>
+        </td>
+        <td>Learning Mode:</td>
+        <td>
+          <input type="radio" id="online" name="mode" value="online">
+          <label for="online">Online</label>
+          <input type="radio" id="offline" name="mode" value="offline">
+          <label for="offline">Offline</label>
+        </td>
+      </tr>
+      <tr>
+        <td><label for="knowledge">Previous Knowledge:</label></td>
+        <td colspan="3"><textarea id="knowledge" name="knowledge" rows="3" cols="30"></textarea></td>
+      </tr>
+      <tr>
+        <td><label for="level">Course Level:</label></td>
+        <td>
+          <select id="level" name="level">
+            <option value="beginner">Beginner</option>
+            <option value="intermediate">Intermediate</option>
+            <option value="advanced">Advanced</option>
+          </select>
+        </td>
+        <td><label for="duration">Duration:</label></td>
+        <td>
+          <select id="duration" name="duration">
+            <option value="3">3 Months</option>
+            <option value="6">6 Months</option>
+            <option value="12">12 Months</option>
+          </select>
+        </td>
+      </tr>
+    </table>
+  </fieldset>
+  <br>
+
+  <!-- Skills & Interests -->
+  <fieldset>
+    <legend>Skills &amp; Interests</legend>
+    <table>
+      <tr>
+        <td>Technical Skills:</td>
+        <td>
+          <input type="checkbox" id="html" name="skills" value="html"><label for="html">HTML</label>
+          <input type="checkbox" id="python" name="skills" value="python"><label for="python">Python</label>
+          <input type="checkbox" id="java" name="skills" value="java"><label for="java">Java</label>
+          <input type="checkbox" id="sql" name="skills" value="sql"><label for="sql">SQL</label>
+        </td>
+      </tr>
+      <tr>
+        <td><label for="topics">Interested Topics:</label></td>
+        <td>
+          <select id="topics" name="topics" multiple size="4">
+            <option value="programming">Programming</option>
+            <option value="ml">Machine Learning</option>
+            <option value="database">Database</option>
+            <option value="networking">Networking</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td><label for="confidence">Skill Confidence:</label></td>
+        <td><input type="range" id="confidence" name="confidence" min="0" max="100" value="40"></td>
+      </tr>
+    </table>
+  </fieldset>
+  <br>
+
+
+  <fieldset>
+    <legend>Payment Details</legend>
+    <table>
+      <tr>
+        <td><label for="payment">Payment Method:</label></td>
+        <td>
+          <select id="payment" name="payment">
+            <option value="card">Credit Card</option>
+            <option value="bkash">bKash</option>
+            <option value="nagad">Nagad</option>
+            <option value="bank">Bank Transfer</option>
+          </select>
+        </td>
+        <td><label for="transaction">Transaction ID:</label></td>
+        <td><input type="text" id="transaction" name="transaction"></td>
+      </tr>
+      <tr>
+        <td><label for="receipt">Upload Receipt:</label></td>
+        <td colspan="3"><input type="file" id="receipt" name="receipt"></td>
+      </tr>
+    </table>
+  </fieldset>
+  <br>
+  <fieldset>
+    <legend>Emergency Contact &amp; Agreement</legend>
+    <table>
+      <tr>
+        <td><label for="contactName">Contact Name:</label></td>
+        <td><input type="text" id="contactName" name="contactName"></td>
+        <td><label for="contactPhone">Phone:</label></td>
+        <td><input type="tel" id="contactPhone" name="contactPhone"></td>
+      </tr>
+    </table>
+    <input type="checkbox" id="confirm" name="confirm">
+    <label for="confirm">I confirm my information is correct.</label><br>
+    <input type="checkbox" id="rules" name="rules">
+    <label for="rules">I agree with course rules.</label><br>
+    <input type="checkbox" id="updates" name="updates">
+    <label for="updates">Send course updates.</label>
+  </fieldset>
+  <br>
+  <
