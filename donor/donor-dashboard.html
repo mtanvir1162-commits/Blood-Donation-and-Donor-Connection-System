@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LifeLink - Donor Dashboard</title>
+</head>
+
+<body>
+
+
+    <header>
+        <h1>LifeLink</h1>
+        <p>A Web-Based Blood Donation and Donor Connection System</p>
+
+        <nav align="right">
+            <a href="homepage.html">Home</a> |
+            <a href="login.html">Logout</a>
+        </nav>
+
+        <hr>
+    </header>
+
+    <main>
+
+        <section id="welcome">
+            <h2>Donor Dashboard</h2>
+            <p>Welcome to your LifeLink Donor Dashboard!</p>
+
+            <p>
+                Thank you for being a blood donor.
+                Your contribution can help save lives.
+            </p>
+        </section>
+
+        <hr>
+
+        <section id="profile">
+            <h2>My Profile</h2>
+
+            <p><strong>Full Name:</strong> Donor Name</p>
+            <p><strong>Email:</strong> donor@example.com</p>
+            <p><strong>Phone Number:</strong> 01XXXXXXXXX</p>
+            <p><strong>Blood Group:</strong> B+</p>
+            <p><strong>Location:</strong> Dhaka, Bangladesh</p>
+
+            <p>
+                <a href="edit-profile.html">Edit My Profile</a>
+            </p>
+        </section>
+
+        <hr>
+
+        <section id="availability">
+            <h2>Donation Availability</h2>
+
+            <p>
+                Update your availability so people can know
+                whether you are currently available to donate blood.
+            </p>
+
+            <form action="#" method="post">
+
+                <label for="status">Current Availability:</label>
+
+                <select id="status" name="availability" required>
+                    <option value="">Select Availability</option>
+                    <option value="available">Available</option>
+                    <option value="unavailable">Unavailable</option>
+                </select>
+
+                <br><br>
+
+                <button type="submit">Update Availability</button>
+
+            </form>
+        </section>
+
+        <hr>
+
+        <section id="blood-requests">
+            <h2>Blood Donation Requests</h2>
+
+            <p>
+                Check blood requests and contact people
+                who need your blood group.
+            </p>
+
+            <p>
+                <a href="search.html">View Blood Requests</a>
+            </p>
+        </section>
+
+        <hr>
+
+        <section id="history">
+            <h2>My Donation History</h2>
+
+            <p>
+                View your previous blood donations and
+                donation records here.
+            </p>
+
+            <p>
+                <a href="donation-history.html">View Donation History</a>
+            </p>
+        </section>
+
+        <hr>
+
+        <section id="settings">
+            <h2>Account Settings</h2>
+
+            <ul>
+                <li>
+                    <a href="edit-profile.html">Update Profile</a>
+                </li>
+                <li>
+                    <a href="change-password.html">Change Password</a>
+                </li>
+                <li>
+                    <a href="login.html">Logout</a>
+                </li>
+            </ul>
+        </section>
+
+    </main>
+
+    <hr>
+
+
+</body>
+</html>
